@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/variables';
+@use 'styles/framework';
+body {
+  margin: 0px;
+  background-color: var(--goodreads-bg-light);
+  * {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../styles/mixins.scss" as m;
+.gr-wrapped-home-container {
+  .logo {
+    padding: 2% 5% 2% 5%;
+    .logo-text {
+      font-size: 72px;
+      color: var(--goodreads-text-brown);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include m.responsive(phone) {
+        font-size: 48px;
+      }
+      .logo-text-inline {
+        display: inline-flex;
+        letter-spacing: -3px;
+        .logo-bold {
+          font-weight: bold;
+        }
+        .logo-thin {
+          font-weight: 200;
+        }
+      }
+    }
+  }
+  .how-to-use-container {
+    display: flex;
+    color: var(--goodreads-text-brown);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    .how-to-use-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .usage-instructions {
+      padding: 24px;
+      .instruction {
+        padding: 5px;
+      }
+      .instruction-breakdown {
+        padding: 12px 30px;
+        .sub-instruction {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  background-color: var(--goodreads-text-brown);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .bar-text {
+    color: white;
+    padding: 12px;
+    .bar-link,
+    .bar-link:active {
+      font-weight: bold;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .bar-text-secondary {
+    margin-left: 32px;
+    font-size: 12px;
+    font-style: italic;
+    @include m.responsive(phone) {
+      display: none;
+    }
+  }
+}
