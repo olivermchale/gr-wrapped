@@ -2,6 +2,7 @@
 @use "styles/framework";
 @use "styles/scrollbar";
 body {
+  min-height: 100vh;
   margin: 0px;
   background-color: var(--goodreads-bg-light);
   * {
