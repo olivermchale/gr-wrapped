@@ -1,3 +1,3 @@
 export const environment = {
-  serviceUrl: 'http://localhost:3000',
+  serviceUrl: 'https://gr-wrapped-backend-production.up.railway.app/',
 };
