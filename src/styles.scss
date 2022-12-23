@@ -1,8 +1,12 @@
 @use "styles/variables";
 @use "styles/framework";
 @use "styles/scrollbar";
+html {
+  height: -webkit-fill-available;
+}
 body {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   margin: 0px;
   background-color: var(--goodreads-bg-light);
   * {
