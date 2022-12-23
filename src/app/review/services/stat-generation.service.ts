@@ -163,7 +163,7 @@ export class StatGenerationService {
     );
     const averageAge = Math.round(ageSum / bookAges.length);
     const descriptionText =
-      averageAge >= 2022
+      averageAge >= 2015
         ? 'You love newer books!'
         : averageAge < 2000
         ? 'You love older books!'
