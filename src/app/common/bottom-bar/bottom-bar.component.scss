@@ -3,6 +3,9 @@
 :host {
   display: block;
   padding-top: 16px;
+  @include m.responsive(phone) {
+    display: none;
+  }
   .bottom-bar {
     position: fixed;
     bottom: 0px;
@@ -27,9 +30,6 @@
       margin-left: 32px;
       font-size: 12px;
       font-style: italic;
-      @include m.responsive(phone) {
-        display: none;
-      }
     }
   }
 }
