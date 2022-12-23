@@ -3,7 +3,7 @@
   display: block;
   .gr-wrapped-review-container {
     @include m.responsive(phone) {
-      height: calc(100vh - 66px);
+      height: calc(100vh - 90px);
     }
     .logo {
       padding: 40px 100px;
