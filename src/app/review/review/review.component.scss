@@ -3,9 +3,6 @@
   display: block;
   .gr-wrapped-review-container {
     padding-bottom: 16px;
-    @include m.responsive(phone) {
-      height: calc(100vh - 50px);
-    }
     .logo {
       padding: 40px 100px;
       @include m.responsive(phone) {
@@ -39,9 +36,6 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      @include m.responsive(phone) {
-        height: calc(100vh - 222px);
-      }
     }
     .btn-arrow {
       width: 40px;

@@ -2,15 +2,9 @@
 .gr-wrapped-home-container {
   overflow: auto;
   padding-bottom: 16px;
-  @include m.responsive(phone) {
-    height: calc(100vh - 50px);
-  }
 
   .logo {
     padding: 40px 100px;
-    @include m.responsive(phone) {
-      padding: 16px 20px;
-    }
     .logo-text {
       font-size: 72px;
       color: var(--goodreads-text-brown);
