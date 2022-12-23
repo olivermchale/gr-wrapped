@@ -1,5 +1,16 @@
 <section class="upload-section">
   <h2 class="title-md">Data Import</h2>
-  <input class="name-input" type="text" placeholder="Name (e.g Oliver)" />
-  <button class="upload-button">Upload Data</button>
+  <input
+    class="profile-input"
+    type="text"
+    placeholder="Profile URL"
+    [(ngModel)]="profileURL"
+  />
+  <label for="file-upload" class="upload-button">Upload Data</label>
+  <input
+    class="hidden-file-input"
+    id="file-upload"
+    type="file"
+    (change)="handleFileInput($event)"
+  />
 </section>

@@ -1,13 +1,12 @@
 @use "../../../styles/mixins.scss" as m;
 :host {
   display: block;
-  height: 100%;
   .upload-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    .name-input {
+    .profile-input {
       margin-top: 32px;
       background-color: white;
       height: 48px;
@@ -22,7 +21,7 @@
       color: white;
       background-color: var(--goodreads-text-brown);
       padding: 16px;
-      margin-top: 64px;
+      margin-top: 32px;
       border-radius: 6px;
       font-weight: bold;
       font-size: 16px;
@@ -30,6 +29,9 @@
       @include m.responsive(phone) {
         margin-top: 16px;
       }
+    }
+    .hidden-file-input {
+      display: none;
     }
   }
 }

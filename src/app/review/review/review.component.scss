@@ -1,0 +1,70 @@
+@use "../../../styles/mixins.scss" as m;
+:host {
+  display: block;
+  .gr-wrapped-review-container {
+    @include m.responsive(phone) {
+      height: calc(100vh - 66px);
+    }
+    .logo {
+      padding: 40px 100px;
+      @include m.responsive(phone) {
+        padding: 16px 20px;
+      }
+      .logo-text {
+        font-size: 72px;
+        color: var(--goodreads-text-brown);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include m.responsive(phone) {
+          font-size: 48px;
+        }
+        .logo-text-inline {
+          display: inline-flex;
+          letter-spacing: -3px;
+          .logo-bold {
+            font-weight: bold;
+          }
+          .logo-thin {
+            font-weight: 200;
+          }
+        }
+      }
+    }
+    .current-stat-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @include m.responsive(phone) {
+        height: calc(100vh - 222px);
+      }
+    }
+    .btn-arrow {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(134, 134, 134, 0.185);
+
+      cursor: pointer;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .arrow-next {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      right: 8px;
+    }
+    .arrow-prev {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      left: 8px;
+    }
+  }
+}
