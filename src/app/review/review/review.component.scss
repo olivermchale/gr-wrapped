@@ -2,8 +2,9 @@
 :host {
   display: block;
   .gr-wrapped-review-container {
+    padding-bottom: 16px;
     @include m.responsive(phone) {
-      height: calc(100vh - 90px);
+      height: calc(100vh - 50px);
     }
     .logo {
       padding: 40px 100px;

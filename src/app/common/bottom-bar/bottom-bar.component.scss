@@ -2,10 +2,6 @@
 
 :host {
   display: block;
-  padding-top: 16px;
-  @include m.responsive(phone) {
-    display: none;
-  }
   .bottom-bar {
     position: fixed;
     bottom: 0px;
