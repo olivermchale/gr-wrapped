@@ -47,7 +47,7 @@ export class StatGenerationService {
     const e = this.buildAverageRatingStat(statsForYear);
     const f = this.buildFavoriteBookStats(statsForYear);
     const g = this.buildBookAgeStat(statsForYear);
-    const h = this.buildCelebrationStat(statsForYear);
+    const h = this.buildCelebrationStat();
     return [a, b, c, d, e, f, g, h];
   }
 
@@ -169,19 +169,19 @@ export class StatGenerationService {
         ? 'You love older books!'
         : 'You love books old and new!';
     return {
-      titleText: `The average publiciation year of your books was ${averageAge}`,
+      titleText: `The average publication year of your books was ${averageAge}`,
       imageName: 'bookAge',
       imageAlt: 'A woman sat down with a cup of tea, reading a book',
       descriptionText,
     };
   }
 
-  buildCelebrationStat(statsForYear: GoodreadsBookEntry[]): YearStat {
+  buildCelebrationStat(currentYear: number = 2022): YearStat {
     return {
       titleText: 'Celebrating a year of awesome reading!',
       imageName: 'celebration',
       imageAlt: 'Two women celebrating',
-      descriptionText: `Here's to 2023! Thank you`,
+      descriptionText: `Here's to ${currentYear + 1}! Thank you`,
     };
   }
 }
